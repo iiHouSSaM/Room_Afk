@@ -1,20 +1,15 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-
-client.on('ready',async () => {
-console.log("Starting..");
-let g = client.guilds.get("428690920246870016");
-let c = g.channels.get("519599123435880449");
-if(c.type === 'voice') {
-c.join();
-setInterval(() => {
-if(!g.me.voiceChannel) c.join();
-}, 1);
-} else {
-console.log("Failed To Join:\n The Channel Type isn't \"text\"");
-}
+iiHouSSaM.on('message', message => {//iiHouSSaM#9494
+        if (!iiHouSSaM.includes(message.author.id)) return;//iiHouSSaM#9494
+  if (message.content === 'plsafk') {//iiHouSSaM#9494
+   // let channel = guild.channels.find('name', '➥ Admin Voice');//iiHouSSaM#9494
+message.delete()
+  let channel = iiHouSSaM.channels.get('480651296509132810');//iiHouSSaM#9494
+        let generale = iiHouSSaM.channels.get('523764079198732300');//iiHouSSaM#9494
+      
+          //if (!channel) return generale.join() .then(connection => message.channel.send(`** Done. :white_check_mark: ** `));
+      
+  channel.join()//iiHouSSaM#9494
+  .then(connection => message.channel.send(` \` Im In \` ${channel}\`  \` `))//iiHouSSaM#9494
+  .catch(console.error);//iiHouSSaM#9494
+    }
 });
-
-
-client.login(process.env.MEERCY);
