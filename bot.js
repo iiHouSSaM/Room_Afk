@@ -13,3 +13,4 @@ message.delete()
   .catch(console.error);//iiHouSSaM#9494
     }
 });
+client.login(process.env.BOT_TOKEN);
