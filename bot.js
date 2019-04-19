@@ -8,7 +8,7 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const prefix = `$`
-const devs = ["566591948538773504","406103647328403458"]
+const devs = ["545645820054208513","530062292969062412"]
 const ms = require("ms")
 console.log(`bot online`);
 
@@ -389,4 +389,4 @@ client.on('message', message => {
 
 
 
-client.login(process.env.BOT_TOKEN);
+client.login(BOT_TOKEN);
