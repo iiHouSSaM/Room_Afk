@@ -440,8 +440,6 @@ client.on("message", message => {
 
 ^^support| القسم الثاني  الدعم الفني و المساعدة
 
-القسم الثالث مصمم البوت | @حـ♥̨̥̬̩سوني آإلعرآإقـ♥̨̥̬̩ي#7725 
-
 
 `)
 
@@ -510,7 +508,7 @@ if (message.content.startsWith("^^cv")) {
 
 
 
-var prefix = "^^";
+var prefix = "$";
 
 client.on('message', message => {
   if (message.author.bot) return;
